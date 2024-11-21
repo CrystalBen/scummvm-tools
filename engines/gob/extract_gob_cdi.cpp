@@ -119,6 +119,12 @@ int main(int argc, char** argv) {
 		}
 	}
 
+// Check if the input file has an .rtf extension
+if (strlen(fname) < 4 || strcmp(&fname[strlen(fname) - 4], ".rtf") != 0) {
+    fprintf(stderr, "Unexpected input file, The input file must have an .rtf extension.\n");
+    return -1;
+}
+
 	src_raw = fopen(fname, "rb");
 	if (src_raw == NULL) {
 		perror(argv[1]);
