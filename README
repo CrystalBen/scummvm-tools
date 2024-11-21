@@ -99,6 +99,16 @@ Extraction Tools:
                Example of usage:
                 ./scummvm-tools-cli --tool extract_cryo [-o outputdir] <infile>
 
+        extract_gob_cdi
+                Extract the rtf files (Real time file) file used for the CD-i versions of ADI, 
+                Gobliins (Bundled with ADI but only offer a few levels to play.), Inca
+
+                Usage: ./extract_gob_cdi [-list] <real-time-file>
+                -list shows the files that are inside of the RTF file.
+                For extraction ./extract_gob_cdi example.rtf
+                You can also under Windows drag and drop the rtf file onto the extract_gob_cdi executable for extraction.
+
+
         extract_gob_stk
                 Extracts data files from STK/ITK files from Coktel Vision
                 games.
